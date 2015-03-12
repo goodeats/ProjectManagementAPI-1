@@ -1,0 +1,14 @@
+0000000000000000000000000000000000000000 bab8a62426958ae6eede599088a479b787d323fb Annie <anne.bourgeois1@gmail.com> 1426121190 -0400	clone: from git@github.com:TeamBerners-Lee/ProjectManagementAPI.git
+bab8a62426958ae6eede599088a479b787d323fb bab8a62426958ae6eede599088a479b787d323fb Annie <anne.bourgeois1@gmail.com> 1426166664 -0400	checkout: moving from master to annie
+bab8a62426958ae6eede599088a479b787d323fb fafb977cadad691ec1a3f32d39b0f5a2d66e2b7e Annie <anne.bourgeois1@gmail.com> 1426166926 -0400	pull upstream master: Fast-forward
+fafb977cadad691ec1a3f32d39b0f5a2d66e2b7e bab8a62426958ae6eede599088a479b787d323fb Annie <anne.bourgeois1@gmail.com> 1426167020 -0400	rebase: checkout master
+bab8a62426958ae6eede599088a479b787d323fb 86c009e0f11edcf800f72d6a5947abf5c798b80d Annie <anne.bourgeois1@gmail.com> 1426167020 -0400	rebase: created routes for groups, users, projects, tasks.
+86c009e0f11edcf800f72d6a5947abf5c798b80d 5900ddc42e1fa6dba57e7588a4032169413d31d0 Annie <anne.bourgeois1@gmail.com> 1426167021 -0400	rebase: added the cors middleware code to the application.rb file.
+5900ddc42e1fa6dba57e7588a4032169413d31d0 58c0deec10d49b3b1297629b4b8767bb24045934 Annie <anne.bourgeois1@gmail.com> 1426167021 -0400	rebase: added gems to the gemfile
+58c0deec10d49b3b1297629b4b8767bb24045934 926cb4b1f90b1ef471d1fc674a6fb945f737a954 Annie <anne.bourgeois1@gmail.com> 1426167021 -0400	rebase: added new relic gem
+926cb4b1f90b1ef471d1fc674a6fb945f737a954 926cb4b1f90b1ef471d1fc674a6fb945f737a954 Annie <anne.bourgeois1@gmail.com> 1426167021 -0400	rebase finished: returning to refs/heads/annie
+926cb4b1f90b1ef471d1fc674a6fb945f737a954 30df71a620f1d93dab02302d1047d0fb19494962 Annie <anne.bourgeois1@gmail.com> 1426167417 -0400	commit: Moved everything up one directory
+30df71a620f1d93dab02302d1047d0fb19494962 bab8a62426958ae6eede599088a479b787d323fb Annie <anne.bourgeois1@gmail.com> 1426167655 -0400	checkout: moving from annie to annie-b-annie
+bab8a62426958ae6eede599088a479b787d323fb 30df71a620f1d93dab02302d1047d0fb19494962 Annie <anne.bourgeois1@gmail.com> 1426167665 -0400	pull https://github.com/annie-b/ProjectManagementAPI.git annie: Fast-forward
+30df71a620f1d93dab02302d1047d0fb19494962 bab8a62426958ae6eede599088a479b787d323fb Annie <anne.bourgeois1@gmail.com> 1426167675 -0400	checkout: moving from annie-b-annie to master
+bab8a62426958ae6eede599088a479b787d323fb 48cd0888c4fb6a479d757298bf777bc4adc43d6f Annie <anne.bourgeois1@gmail.com> 1426167684 -0400	merge annie-b-annie: Merge made by the 'recursive' strategy.
