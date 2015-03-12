@@ -18,7 +18,7 @@ module ProjectManagementApi
         # WARNING: Allow ALL cross site scripting from ALL domains
         origins '*'
         # WARNING: Allow ALL HTTP method
-        resource '*', :headers => :any, :methods => [:get, :post,:delete, :options]
+        resource '*', :headers => :any, :methods => [:get, :post, :patch, :delete, :options]
       end
     end
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
