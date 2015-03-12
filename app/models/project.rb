@@ -1,5 +1,4 @@
 class Project < ActiveRecord::Base
-  belongs_to :groups
-  belongs_to :users
+  belongs_to :group
   has_many :tasks
 end
