@@ -1,0 +1,17 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[branch "master"]
+[remote "origin"]
+	url = git@github.com:annie-b/ProjectManagementAPI.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[remote "upstream"]
+	url = git@github.com:TeamBerners-Lee/ProjectManagementAPI.git
+	fetch = +refs/heads/*:refs/remotes/upstream/*
+[remote "upstream2"]
+	url = git@github.com:TeamBerners-Lee/ProjectManagementAPI2.git
+	fetch = +refs/heads/*:refs/remotes/upstream2/*
