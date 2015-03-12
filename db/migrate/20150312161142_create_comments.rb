@@ -1,10 +1,10 @@
-class CreateComment < ActiveRecord::Migration
+class CreateComments < ActiveRecord::Migration
   def change
     create_table :comments do |t|
       t.text :body
       t.timestamp
-      t.belongs_to :tasks, index: true
-      t.belongs_to :users, index: true
+      t.belongs_to :task, index: true
+      t.belongs_to :user, index: true
     end
     add_foreign_key :comments, :tasks
     add_foreign_key :comments, :users
