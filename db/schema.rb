@@ -11,9 +11,65 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20150312183348) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "comments", force: :cascade do |t|
+    t.text    "body"
+    t.integer "task_id"
+    t.integer "user_id"
+  end
+
+  add_index "comments", ["task_id"], name: "index_comments_on_task_id", using: :btree
+  add_index "comments", ["user_id"], name: "index_comments_on_user_id", using: :btree
+
+  create_table "group_memberships", force: :cascade do |t|
+    t.string "role"
+  end
+
+  create_table "groups", force: :cascade do |t|
+    t.string  "name"
+    t.boolean "privacy"
+  end
+
+  create_table "projects", force: :cascade do |t|
+    t.string  "name"
+    t.string  "description"
+    t.date    "due_date"
+    t.boolean "privacy"
+    t.integer "group_id"
+  end
+
+  add_index "projects", ["group_id"], name: "index_projects_on_group_id", using: :btree
+
+  create_table "tasks", force: :cascade do |t|
+    t.string  "name"
+    t.date    "due_date"
+    t.string  "status"
+    t.string  "priority"
+    t.integer "order"
+    t.boolean "privacy"
+    t.integer "project_id"
+    t.integer "user_id"
+  end
+
+  add_index "tasks", ["project_id"], name: "index_tasks_on_project_id", using: :btree
+  add_index "tasks", ["user_id"], name: "index_tasks_on_user_id", using: :btree
+
+  create_table "users", force: :cascade do |t|
+    t.string "username"
+    t.string "email"
+    t.string "password_digest"
+    t.string "title"
+    t.string "role"
+    t.string "token"
+  end
+
+  add_foreign_key "comments", "tasks"
+  add_foreign_key "comments", "users"
+  add_foreign_key "projects", "groups"
+  add_foreign_key "tasks", "projects"
+  add_foreign_key "tasks", "users"
 end
