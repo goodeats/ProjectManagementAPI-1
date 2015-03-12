@@ -6,6 +6,7 @@ gem 'spring', :group => :development
 gem 'pg'
 gem 'newrelic_rpm'
 gem 'rack-cors'
+gem "paperclip", "~> 4.2"
 gem 'active_model_serializers'
 gem 'nokogiri'
 gem 'bcrypt', '~> 3.1.7'
