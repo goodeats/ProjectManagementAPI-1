@@ -1,3 +1,3 @@
-class GroupMembership < ActiveModel::Serializer
+class GroupMembershipSerializer < ActiveModel::Serializer
   attributes :id, :role
 end
