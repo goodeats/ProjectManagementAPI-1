@@ -10,6 +10,7 @@ gem "paperclip", "~> 4.2"
 gem 'active_model_serializers'
 gem 'nokogiri'
 gem 'bcrypt', '~> 3.1.7'
+gem 'aws-sdk', '< 2.0'
 group :development, :test do
   gem 'capybara'
   gem 'rubocop'
